@@ -64,7 +64,108 @@
             >
           </li>
         </ul>
+
+          <!--Mobile menu begins-->
+
+        <button
+          type="button"
+          class="menu-button buttons"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="burger-menu-icon js-open-menu"
+            width="32"
+            height="22"
+           >
+            <use href="./images/menu-harmburger.svg"></use>
+           </svg>
+        </button>
       </div>
+      <div class="menu-container js-menu-container">
+         <div class="menu-container-flex">
+          <button class="mobile-menu-close buttons js-close-menu">
+            <svg class="mobile-menu-icon" width="8" height="8">
+               <use href="./image/icons.svg#icon-close"></use>
+             </svg>
+          </button>
+          <ul class="menu-navigation-list list">
+             <li class="menu-navigation-item">
+               <a class="menu-navigation-link link" href="./index.html"
+                >Studio</a
+               >
+             </li>
+             <li class="menu-navigation-item">
+               <a class="menu-navigation-link link" href="./portfolio.html"
+                >Portfolio</a
+               >
+            </li>
+             <li class="menu-navigation-item">
+               <a class="menu-navigation-link link" href="">Contacts</a>
+             </li>
+            </ul>
+          <ul class="menu-contact-list list">
+             <li class="menu-contact-item">
+               <a class="menu-contact link" href="href=tel:+11(000)111-11-11"
+                 >+11(000)111-11-11</a
+               >
+               <a class="menu-contact link" href="mailto:info@devstudio.com"
+                 >info@devstudio.com</a
+               >
+             </li>
+          </ul>
+
+          <ul class="menu-social-list list">
+            <li class="menu-contact-item""">
+               <a href="https://www.instagram.com" class="team-social-link link">
+                <svg
+                  class="menu-social-icon"
+                  width="16"
+                  height="16"
+                 >
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                 </svg>
+              </a>
+            </li>
+
+            <li class="menu-contact-item"">
+               <a href="https://www.twitter.com" class="team-social-link link">
+                 <svg
+                  class="menu-social-icon"
+                  width="16"
+                  height="16"
+                >
+                   <use href="./images/icons.svg#icon-twitter"></use>
+                 </svg>
+               </a>
+            </li>
+
+             <li class="menu-contact-item"">
+               <a href="https://www.facebook.com" class="team-social-link link">
+                <svg
+                   class="menu-social-icon"
+                   width="16"
+                   height="16"
+                 >
+                   <use href="./images/icons.svg#icon-facebook"></use>
+                 </svg>
+               </a>
+             </li>
+
+             <li class="social-icon">
+               <a href="https://www.linkedin.com" class="team-social-link link">
+                 <svg
+                   class="menu-social-icon"
+                   width="16"
+                   height="16"
+                 >
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                 </svg>
+               </a>
+            </li>
+           </ul>
+         </div>
+       </div>
     </header>
 
     <!-- Main content -->
@@ -167,6 +268,7 @@
           </form>
         </div>
       </div>
+      <script src="./js/mobile-menu.js"></script>
       <script src="./js/modal.js"></script>
 
       <!-- Features -->
@@ -624,7 +726,7 @@
           <ul class="social-list list">
             <li>
               <a
-                href="www.instagram.com"
+                href="https://www.instagram.com"
                 class="social-link"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -636,7 +738,7 @@
             </li>
             <li>
               <a
-                href="www.twitter.com"
+                href="https://www.twitter.com"
                 class="social-link"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -648,7 +750,7 @@
             </li>
             <li>
               <a
-                href="www.facebook.com"
+                href="https://www.facebook.com"
                 class="social-link"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -660,7 +762,7 @@
             </li>
             <li>
               <a
-                href="www.linkedin.com"
+                href="https://www.linkedin.com"
                 class="social-link"
                 target="_blank"
                 rel="noreferrer noopener"
