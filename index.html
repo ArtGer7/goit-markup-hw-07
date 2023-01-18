@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -65,11 +65,11 @@
           </li>
         </ul>
 
-          <!--Mobile menu begins-->
+        <!--Mobile menu begins-->
 
         <button
           type="button"
-          class="menu-button buttons"
+          class="menu-button button"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -78,15 +78,15 @@
             width="32"
             height="22"
            >
-            <use href="./images/menu-harmburger.svg"></use>
+            <use href="./images/icons.svg#icon-burger"></use>
            </svg>
         </button>
       </div>
       <div class="menu-container js-menu-container">
          <div class="menu-container-flex">
-          <button class="mobile-menu-close buttons js-close-menu">
+          <button class="mobile-menu-close button js-close-menu">
             <svg class="mobile-menu-icon" width="8" height="8">
-               <use href="./image/icons.svg#icon-close"></use>
+               <use href="./images/icons.svg#icon-close"></use>
              </svg>
           </button>
           <ul class="menu-navigation-list list">
@@ -106,58 +106,46 @@
             </ul>
           <ul class="menu-contact-list list">
              <li class="menu-contact-item">
-               <a class="menu-contact link" href="href=tel:+11(000)111-11-11"
+               <a class="menu-contact-tel link" href="href=tel:+11(000)111-11-11"
                  >+11(000)111-11-11</a
                >
-               <a class="menu-contact link" href="mailto:info@devstudio.com"
+               <a class="menu-contact-mail link" href="mailto:info@devstudio.com"
                  >info@devstudio.com</a
                >
              </li>
           </ul>
-
           <ul class="menu-social-list list">
-            <li class="menu-contact-item""">
-               <a href="https://www.instagram.com" class="team-social-link link">
+            <li class="menu-contact-item">
+               <a href="https://www.instagram.com" class="menu-social-link link">
                 <svg
                   class="menu-social-icon"
-                  width="16"
-                  height="16"
                  >
                   <use href="./images/icons.svg#icon-instagram"></use>
                  </svg>
               </a>
             </li>
-
             <li class="menu-contact-item"">
                <a href="https://www.twitter.com" class="team-social-link link">
                  <svg
                   class="menu-social-icon"
-                  width="16"
-                  height="16"
                 >
                    <use href="./images/icons.svg#icon-twitter"></use>
                  </svg>
                </a>
             </li>
-
              <li class="menu-contact-item"">
                <a href="https://www.facebook.com" class="team-social-link link">
                 <svg
                    class="menu-social-icon"
-                   width="16"
-                   height="16"
                  >
                    <use href="./images/icons.svg#icon-facebook"></use>
                  </svg>
                </a>
              </li>
-
              <li class="social-icon">
                <a href="https://www.linkedin.com" class="team-social-link link">
                  <svg
                    class="menu-social-icon"
-                   width="16"
-                   height="16"
                  >
                   <use href="./images/icons.svg#icon-linkedin"></use>
                  </svg>
@@ -184,141 +172,54 @@
         </div>
       </section>
 
-      <!-- Modal -->
-      <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-btn" data-modal-close>
-            <svg class="modal-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-
-          <p class="modal-title">
-            Leave your contacts and we will call you back
-          </p>
-          <form class="modal-form">
-            <label class="modal-form-field">
-              <span class="modal-form-input-desc">Name</span>
-              <span class="modal-input-wrapper">
-                <input
-                  class="modal-input"
-                  type="text"
-                  name="name"
-                  required
-                  autocapitalize="on"
-                  minlength="3"
-                />
-                <svg
-                  class="modal-form-icons modal-icon-name"
-                  width="12"
-                  height="12"
-                >
-                  <use href="./images/icons.svg#modal-icon-name"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="modal-form-field">
-              <span class="modal-form-input-desc">Phone</span>
-              <span class="modal-input-wrapper">
-                <input class="modal-input" type="tel" name="phone" required />
-                <svg
-                  class="modal-form-icons modal-icon-phone"
-                  width="13"
-                  height="13"
-                >
-                  <use href="./images/icons.svg#modal-icon-phone"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="modal-form-field">
-              <span class="modal-form-input-desc">Email</span>
-              <span class="modal-input-wrapper">
-                <input class="modal-input" type="email" name="email" required />
-                <svg
-                  class="modal-form-icons modal-icon-mail"
-                  width="15"
-                  height="12"
-                >
-                  <use href="./images/icons.svg#modal-icon-mail"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="modal-form-field">
-              <span class="modal-form-input-desc">Comment</span>
-              <textarea
-                class="modal-comment"
-                name="comment"
-                rows="7"
-                placeholder="Text input"
-              ></textarea>
-            </label>
-            <label class="modal-form-check-desc">
-              <input
-                class="modal-checkbox"
-                type="checkbox"
-                name="policy-agree"
-                value="ok"
-              />
-              <span class="policy-agree-text"
-                >I accept the terms and conditions of the
-                <a href="/" class="modal-form-policy">Privacy Policy</a></span
-              >
-            </label>
-            <button class="modal-submit-btn btn" type="submit">Send</button>
-          </form>
-        </div>
-      </div>
-      <script src="./js/mobile-menu.js"></script>
-      <script src="./js/modal.js"></script>
-
       <!-- Features -->
       <section class="features section">
         <div class="container">
           <h2 class="section-title visually-hidden">Features</h2>
-          <ul class="list">
-            <li class="item">
+          <ul class="features-list list">
+            <li class="features-item item">
               <div class="features-icon-bg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Strategy</h3>
+              <h3 class="features-title skill-head">Strategy</h3>
               <p class="features-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item item">
               <div class="features-icon-bg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Punctuality</h3>
+              <h3 class="features-title skill-head">Punctuality</h3>
               <p class="features-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item item">
               <div class="features-icon-bg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Diligence</h3>
+              <h3 class="features-title skill-head">Diligence</h3>
               <p class="features-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="item">
+            <li class="features-item item">
               <div class="features-icon-bg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Technologies</h3>
+              <h3 class="features-title skill-head">Technologies</h3>
               <p class="features-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -332,33 +233,63 @@
       <section class="services section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
-          <ul class="list">
+          <ul class="work-list list">
             <li class="work-items item">
-              <img
-                class="services"
-                width="360"
-                height="300"
-                src="./images/imgmon.jpg"
-                alt="monitor"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgmon.webp 1x, ./images/imgmon@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/imgmon.jpg 1x, ./images/imgmon@2x.jpeg 2x"
+                  type="image/img"
+                />
+                <img
+                  class="services"
+                  width="360"
+                  height="300"
+                  src="./images/imgmon.jpg"
+                  alt="monitor"
+                />
+              </picture>
             </li>
             <li class="work-items item">
-              <img
-                class="services"
-                width="360"
-                height="300"
-                src="./images/imgtel.jpg"
-                alt="telephone"
-              />
+              <picture>
+                <source
+                  srcset="./images/main/imgtel.webp 1x, ./images/imgtel@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/main/imgtel.jpg 1x, ./images/imgtel@2x.jpeg 2x"
+                  type="image/img"
+                />
+                <img
+                  class="services"
+                  width="360"
+                  height="300"
+                  src="./images/imgtel.jpg"
+                  alt="telephone"
+                />
+              </picture>
             </li>
             <li class="work-items item">
-              <img
-                class="services"
-                width="360"
-                height="300"
-                src="./images/imgnout.jpg"
-                alt="notebook"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgnout.webp 1x, ./images/imgnout@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/imgnout.jpg 1x, ./images/imgnout@2x.jpeg 2x"
+                  type="image/img"
+                />
+                <img
+                  class="services"
+                  width="360"
+                  height="300"
+                  src="./images/imgnout.jpg"
+                  alt="notebook"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -368,19 +299,21 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li class="team-item item">
               <img
                 class="team-link"
                 width="264"
                 height="260"
+                srcset="./images/mgmarkguerrero.jpg 1x, ./images/imgmarkguerrero@2x.jpg 2x"
                 src="./images/imgmarkguerrero.jpg"
                 alt="team 1.jpg"
               />
               <div class="item-description">
                 <h3 class="team-worker">Mark Guerrero</h3>
                 <p class="team-profession">Product Designer</p>
-                <ul class="team-social-list list">
+                <ul 
+                class="team-social-list list">
                   <li class="social-list-item">
                     <a
                       href="https://www.instagram.com"
@@ -437,6 +370,7 @@
                 class="team-link"
                 width="264"
                 height="260"
+                srcset="./images/imgtomford.jpg 1x, ./images/imgtomford@2x.jpg 2x"
                 src="./images/imgtomford.jpg"
                 alt="team 2.jpg"
               />
@@ -500,6 +434,7 @@
                 class="team-link"
                 width="264"
                 height="260"
+                srcset="./images/imgcamilagarcia.jpg 1x, ./images/imgcamilagarcia@2x.jpg 2x"
                 src="./images/imgcamilagarcia.jpg"
                 alt="team 3.jpg"
               />
@@ -563,6 +498,7 @@
                 class="team-link"
                 width="264"
                 height="260"
+                srcset="./images/imgdanielwilson.jpg 1x, ./images/imgdanielwilson@2x.jpg 2x"
                 src="./images/imgdanielwilson.jpg"
                 alt="team 4.jpg"
               />
@@ -778,7 +714,8 @@
         <!-- Subscribe -->
         <div class="footer-form-subscribe">
           <p class="footer-subscribe">Subscribe</p>
-          <form class="footer-form">
+          <div class="subscribe-wrapper">
+           <form class="footer-form">
             <input
               class="footer-form-input"
               type="email"
@@ -791,9 +728,102 @@
                 <use href="./images/icons.svg#modal-icon-send"></use>
               </svg>
             </button>
-          </form>
+           </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">
+            Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form">
+           <label class="modal-form-field">
+            <span class="modal-form-input-desc">Name</span>
+            <span class="modal-input-wrapper">
+              <input
+                class="modal-input"
+                type="text"
+                name="name"
+                required
+                autocapitalize="on"
+                minlength="3"
+               />
+               <svg
+                class="modal-form-icons modal-icon-name"
+                width="12"
+                height="12"
+               >
+                <use href="./images/icons.svg#modal-icon-name"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-form-field">
+            <span class="modal-form-input-desc">Phone</span>
+             <span class="modal-input-wrapper">
+              <input class="modal-input" type="tel" name="phone" required />
+               <svg
+                class="modal-form-icons modal-icon-phone"
+                width="13"
+                height="13"
+               >
+                 <use href="./images/icons.svg#modal-icon-phone"></use>
+              </svg>
+            </span>
+          </label>
+           <label class="modal-form-field">
+             <span  class="modal-form-input-desc">Email</span>
+             <spanclass="modal-input-wrapper">
+               <input class="modal-input"type="email" name="email" required />
+               <svg
+                class="modal-form-icons modal-icon-mail"
+                width="15"
+                height="12"
+              >
+                 <use href="./images/icons.svg#modal-icon-mail"></use>
+              </svg>
+             </spanclass=>
+          </label>
+          <label class="modal-form-field">
+             <span   class="modal-form-input-desc">Comment</span>
+            <textarea
+              class="modal-comment"
+              name="comment"
+              rows="7"
+              placeholder="Text input"
+              ></textarea>
+           </label>
+           <label class="modal-form-check-desc">
+            <input
+               class="modal-checkbox"
+               type="checkbox"
+               name="policy-agree"
+               value="ok"
+            />
+            <span class="policy-agree-text">I accept the terms and conditions of the
+               <a href="/"class="modal-form-policy">Privacy Policy</a></span
+             >
+           </label>
+           <button class="modal-submit-btn btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- JS SCRIPTS -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
