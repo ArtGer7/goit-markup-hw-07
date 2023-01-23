@@ -295,7 +295,7 @@ body {
 
     .contact {
         display: block;
-        
+        font-size: 12px;
         line-height: 1.33;
         color: var(--main-text-color);
 
@@ -314,6 +314,15 @@ body {
         display: flex;
         flex-direction: row;
         margin-left: auto;
+    }
+
+    .contact {
+        display: block;
+        font-size: 16px;
+        line-height: 1.33;
+        color: var(--main-text-color);
+    
+        transition: color var(--transition-dur-and-timing);
     }
 }
 
@@ -438,7 +447,6 @@ body {
 
 .menu-social-list {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     max-width: 330px;
 }
@@ -748,7 +756,7 @@ body {
 
 .modal-form-icons {
     position: absolute;
-    top: 14px;
+    bottom: 14px;
     left: 19px;
     transition: fill var(--transition-dur-and-timing);
 }
@@ -847,10 +855,7 @@ body {
     border-color var(--transition-dur-and-timing);
 }
 
-.modal-icon-mail {
-    top: 14px;
-    left: 17.5px;
-}
+
 
 /* ______________FEATURES_____________ */
 
@@ -903,7 +908,6 @@ body {
 .features .item {
     flex-basis: calc(100% / 4 - var(--primary-margin-btwn-items));
     margin-left: var(--primary-margin-btwn-items);
-
 }
 
 .features-icon-bg {
@@ -920,6 +924,7 @@ body {
 }
 
 @media screen and (min-width:768px) {
+
     .features-list {
         display: flex;
         flex-wrap: wrap;
