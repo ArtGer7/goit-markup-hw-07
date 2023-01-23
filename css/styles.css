@@ -640,7 +640,8 @@ body {
     padding: 72px 24px 24px;
     width: 91%;
     max-height: 95%;
-    overflow: ;
+    overflow: auto;
+    max-width: 392px;
 
     cursor: pointer;
 
@@ -666,7 +667,6 @@ body {
 		max-width: 408px;
 	}
 }
-
 
 .modal-btn {
     position: absolute;
@@ -755,7 +755,7 @@ body {
     transition: outline var(--transition-dur-and-timing);
 }
 
-.modal-input:focus~.modal-form-icons {
+.modal-input:focus ~ .modal-form-icons {
     fill: var(--primary-brand-color);
 }
 
@@ -1246,7 +1246,6 @@ body {
 .footer-conteiner {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .footer-container {
@@ -1351,6 +1350,10 @@ body {
     .footer-form-input {
         margin-bottom: 16px;
     }
+
+    .footer-conteiner {
+        align-items: center;
+}
 }
 
 @media screen and (min-width:768px) {
