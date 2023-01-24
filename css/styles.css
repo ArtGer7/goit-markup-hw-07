@@ -105,6 +105,11 @@ body {
     min-width: 320px;
 }
 
+.section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
  @media screen and (min-width: 428px) {
     .container {
         width: 426px;
@@ -114,11 +119,21 @@ body {
     .container {
         width: 766px;
     }
+
+    .section {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
   }
   @media screen and (min-width: 1200px) {
     .container {
         width: 1158px;
         padding: 0 15px;
+    }
+
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
   }
 
@@ -134,7 +149,6 @@ body {
         0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    min-width: 320px;
 }
 
 .header-container {
@@ -148,7 +162,7 @@ body {
 .logo-link {
     display: inline-block;
     padding-top: 24px;
-    padding-bottom: 28px;
+    padding-bottom: 24px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -162,9 +176,8 @@ body {
 
 @media screen and (min-width: 1200px) {
     .logo-link {
-        margin-right: 6.7%;
-        padding: 26px 0;
-        line-height: 1.33;
+        margin-right: 76px;
+        padding: 24px 0 28px;
     }
  }
 
@@ -189,6 +202,10 @@ body {
     .contact-list {
         display: none;
     }
+
+    .main-header { 
+        height: 70px;
+    }
 }
 
 .navigation-list {
@@ -211,6 +228,10 @@ body {
 @media screen and (min-width:768px) {
     .logo-link {
         margin-right: 123px;
+    }
+    
+     .main-header { 
+        height: 70px;
     }
 
     .menu-button {
@@ -237,7 +258,8 @@ body {
 
         display: inline-block;
         padding-top: var(--primary-margin-btwn-items);
-        padding-bottom: 28px;
+
+        padding: 24px 0 18px;
 
         font-weight: 500;
 
@@ -253,7 +275,7 @@ body {
     } 
     
     .navigation-link.current {
-    color: var(--primary-brand-color);
+        color: var(--primary-brand-color);
     }
 
     .navigation-link:hover,
@@ -293,6 +315,15 @@ body {
         flex-direction: column;
     }
 
+    .contact-mail {
+        margin-top: 24px;
+        margin-bottom: 4px;
+    }
+
+    .contact-tel {
+        margin-bottom: 10px;
+    }
+
     .contact {
         display: block;
         font-size: 12px;
@@ -323,6 +354,20 @@ body {
         color: var(--main-text-color);
     
         transition: color var(--transition-dur-and-timing);
+    }
+
+    .navigation-link {
+        padding: 24px 0 28px;
+    }
+
+    .contact-mail {
+        margin-top: 24px;
+        margin-bottom: 28px;
+    }
+
+    .contact-tel {
+        margin-top: 24px;
+        margin-bottom: 28px;
     }
 }
 
@@ -478,17 +523,12 @@ body {
     fill: var(--light-background-color);
 }
 
-
-
 /* ________________MAIN________________ */
-
-
 
 .hero {
     max-width: 1440px;
-	padding-top: 112px;
-	padding-bottom: 112px;
 	margin: 0 auto;
+    padding: 112px 0;
     
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
     background-size: cover;
@@ -510,15 +550,54 @@ body {
     }
 }
 
+/* ___________screen >= 768px___________ */
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 768px) and (min-resolution: 192dpi),
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tablet@2x.jpg);
+    }
+}
+
+/* ___________screen >= 1200px___________ */
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1200px) and (min-resolution: 192dpi),
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg@2x.jpg);
+    }
+}
+
 @media screen and (min-width:768px) {
     .hero {
-        padding-top: 112px;
-        padding-bottom: 108px;
+        height: 436px;
+        padding: 112px 0 108px;
     }
 }
 
 @media screen and (min-width:1200px) {
     .hero {
+        height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
@@ -590,20 +669,6 @@ body {
     background-color: #404BBF;
 }
 
-/*.hero-btn:hover {
-    box-shadow: 
-        0px 1px 6px rgba(46, 47, 66, 0.08), 
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
-}
-
-.hero-btn:active {
-    background: #404bbf;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}*/
-
 /* ___________MODAL__________ */
 
 .backdrop.is-hidden {
@@ -656,14 +721,8 @@ body {
     opacity var(--primary-margin-btwn-items);
 }
 
-@media screen and (min-width:428px){
-	.modal{
-		width: 390px;
-	}
-}
-
 @media screen and (min-width:768px){
-	.modal{
+	.modal {
 		max-width: 408px;
 	}
 }
@@ -755,7 +814,7 @@ body {
     transition: outline var(--transition-dur-and-timing);
 }
 
-.modal-input:focus ~ .modal-form-icons {
+.modal-input:focus-within ~ .modal-form-icons {
     fill: var(--primary-brand-color);
 }
 
@@ -856,13 +915,6 @@ body {
     justify-content: center;
 }
 
-.modal-input:focus+.modal-form-icons {
-    fill: var(--primary-brand-color),
-    border-color var(--transition-dur-and-timing);
-}
-
-
-
 /* ______________FEATURES_____________ */
 
 .section-title {
@@ -877,22 +929,12 @@ body {
     color: var(--headings-color);
 }
 
-.section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-}
-
 @media screen and (min-width:1200px) {
     .features-title {
         font-weight: 600;
         font-size: 20px;
         line-height: 1.2;
-    }
-
-    .section {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+    }  
 }
 
 .features-title {
@@ -1081,10 +1123,6 @@ body {
     }
 }
 
-.team-link {
-    margin-bottom: 32px;
-}
-
 .team-item>.team-worker {
     text-align: center;
 }
@@ -1256,9 +1294,7 @@ body {
 /* ________Social media_______ */
 
 .footer-social {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 102px;
+    margin-bottom: 72px;
 }
 
 .social-title {
@@ -1338,7 +1374,7 @@ body {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer-form {
         flex-wrap: wrap;
     }
