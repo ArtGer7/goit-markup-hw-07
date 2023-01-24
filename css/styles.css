@@ -142,8 +142,6 @@ body {
 /* ___________Navigation_________ */
 
 .main-header {
-    border-bottom: 1px solid var(--accent-color);
-
     background-color: var(--white-background-color);
     box-shadow:
         0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -167,7 +165,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration: none;
     text-transform: uppercase;
@@ -230,10 +228,6 @@ body {
         margin-right: 123px;
     }
     
-     .main-header { 
-        height: 70px;
-    }
-
     .menu-button {
         display: none;
     }
@@ -259,7 +253,7 @@ body {
         display: inline-block;
         padding-top: var(--primary-margin-btwn-items);
 
-        padding: 24px 0 18px;
+        padding: 23px 0;
 
         font-weight: 500;
 
@@ -316,12 +310,7 @@ body {
     }
 
     .contact-mail {
-        margin-top: 24px;
         margin-bottom: 4px;
-    }
-
-    .contact-tel {
-        margin-bottom: 10px;
     }
 
     .contact {
@@ -361,13 +350,13 @@ body {
     }
 
     .contact-mail {
-        margin-top: 24px;
-        margin-bottom: 28px;
+        padding-top: 24px;
+        padding-bottom: 28px;
     }
 
     .contact-tel {
-        margin-top: 24px;
-        margin-bottom: 28px;
+        padding-top: 24px;
+        padding-bottom: 28px;
     }
 }
 
